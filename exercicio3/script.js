@@ -11,3 +11,10 @@ const produtos = [
     { nome: "Sabão em Pó", categoria: "Limpeza", preco: 10.80 }
  ]
  
+// Resolução do Exercício 3
+
+const ObjLimpeza = produtos.filter((limp,indice,array)=>{
+    return limp.categoria === "Limpeza"
+})
+
+console.log(`LIMPEZA`, ObjLimpeza)
